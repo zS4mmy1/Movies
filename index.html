@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sammy Premier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="top">
+        <div class="logo">Sammy <span>Premier</span></div>
+        <nav>
+            <a href="#servicios">Servicios</a>
+            <a href="#combos">Combos</a>
+            <a href="#pagos">Pagos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#horario">Horarios</a>
+        </nav>
+    </header>
+
+    <!-- PROMO TOPBAR (pequeña, llamativa) -->
+    <div class="promo-topbar" id="promoTopbar">
+        <div class="promo-left">
+            <span class="spark">🔥</span>
+            <span class="promo-msg">
+                SUPER PROMOS ACTIVAS — Terminan <strong>JUE 01/01/2026 11:59 PM</strong>
+            </span>
+        </div>
+
+        <div class="promo-right">
+            <span class="promo-chip">OFERTA LIMITADA</span>
+            <span class="promo-time" id="promoCountdown">Cargando...</span>
+            <a class="promo-btn" href="#promoSection">Ver Promos</a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>TODO TU STREAMING<br>EN UN SOLO <span>LUGAR</span>.</h1>
+            <p>Explora, combina y ahorra con tus plataformas favoritas.</p>
+
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn primary">VER SERVICIOS</a>
+                <a href="#combos" class="btn secondary">ARMAR COMBO</a>
+                <a href="#promoSection" class="btn ghost">🔥 VER SUPER PROMOS</a>
+            </div>
+        </div>
+
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- PROMOS (compactas y brillantes / ya NO ocupan media pantalla arriba) -->
+    <section class="promo-section" id="promoSection">
+        <div class="container">
+            <div class="promo-head">
+                <h2>🔥 Super Promociones</h2>
+                <p>Elige una promo y se selecciona sola en tu calculadora.</p>
+            </div>
+
+            <div class="promo-strip" id="promoGrid">
+                <button class="promo-card" type="button" data-promo="Promo Disney + Max" data-keys="disney,max">
+                    <div class="promo-top">
+                        <div class="promo-title">Disney+ + HBO Max</div>
+                        <div class="promo-badge">TOP</div>
+                    </div>
+                    <div class="promo-sub">Ideal para pelis y estrenos</div>
+                    <div class="promo-price">
+                        <span class="was">S/ 12.00</span>
+                        <span class="now">S/ 9.50</span>
+                        <span class="save">Ahorras S/ 2.50</span>
+                    </div>
+                    <div class="promo-cta">Elegir SUPER PROMO</div>
+                </button>
+
+                <button class="promo-card" type="button" data-promo="Promo Disney + Max + Prime"
+                    data-keys="disney,max,prime">
+                    <div class="promo-top">
+                        <div class="promo-title">Disney+ + Max + Prime</div>
+                        <div class="promo-badge hot">HOT</div>
+                    </div>
+                    <div class="promo-sub">Combo potente a precio top</div>
+                    <div class="promo-price">
+                        <span class="was">S/ 18.50</span>
+                        <span class="now">S/ 14.50</span>
+                        <span class="save">Ahorras S/ 4.00</span>
+                    </div>
+                    <div class="promo-cta">Elegir SUPER PROMO</div>
+                </button>
+
+                <button class="promo-card" type="button" data-promo="Promo Netflix + Disney + Max"
+                    data-keys="netflix,disney,max">
+                    <div class="promo-top">
+                        <div class="promo-title">Netflix + Disney+ + Max</div>
+                        <div class="promo-badge">BEST</div>
+                    </div>
+                    <div class="promo-sub">Los más pedidos juntos</div>
+                    <div class="promo-price">
+                        <span class="was">S/ 24.90</span>
+                        <span class="now">S/ 20.90</span>
+                        <span class="save">Ahorras S/ 4.00</span>
+                    </div>
+                    <div class="promo-cta">Elegir SUPER PROMO</div>
+                </button>
+
+                <button class="promo-card" type="button" data-promo="Promo Prime + IPTV" data-keys="prime,iptv">
+                    <div class="promo-top">
+                        <div class="promo-title">Prime + IPTV</div>
+                        <div class="promo-badge">PRO</div>
+                    </div>
+                    <div class="promo-sub">Películas + canales al toque</div>
+                    <div class="promo-price">
+                        <span class="was">S/ 14.00</span>
+                        <span class="now">S/ 12.00</span>
+                        <span class="save">Ahorras S/ 2.00</span>
+                    </div>
+                    <div class="promo-cta">Elegir SUPER PROMO</div>
+                </button>
+
+                <button class="promo-card" type="button" data-promo="Promo Crunch + Paramount"
+                    data-keys="crunch,paramount">
+                    <div class="promo-top">
+                        <div class="promo-title">Crunch + Paramount+</div>
+                        <div class="promo-badge">SALE</div>
+                    </div>
+                    <div class="promo-sub">Anime + series y pelis</div>
+                    <div class="promo-price">
+                        <span class="was">S/ 11.00</span>
+                        <span class="now">S/ 9.50</span>
+                        <span class="save">Ahorras S/ 1.50</span>
+                    </div>
+                    <div class="promo-cta">Elegir SUPER PROMO</div>
+                </button>
+            </div>
+
+            <div class="promo-foot">
+                ⏳ Estas promos terminan el <strong>Jueves 01/01/2026 11:59 PM</strong> (hora Lima).
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p class="subtitle">Plataformas individuales con precio fijo mensual</p>
+
+        <div class="services-grid">
+            <div class="service-card netflix">
+                <img src="imgs/Netflix.png" alt="Netflix">
+                <p>Series, películas y documentales aclamados por la crítica.</p>
+                <div class="price">S/ 12.90 <span>/ mes</span></div>
+                <button class="buy-service" data-key="netflix" data-product="Netflix" data-price="12.90">Comprar
+                    Netflix</button>
+            </div>
+
+            <div class="service-card disney">
+                <img src="imgs/disney" alt="Disney+">
+                <p>Disney, Pixar, Marvel, Star Wars y National Geographic.</p>
+                <div class="price">S/ 6.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="disney" data-product="Disney+" data-price="6.50">Comprar
+                    Disney+</button>
+            </div>
+
+            <div class="service-card espn duo">
+                <div class="logos">
+                    <img src="imgs/disney" alt="Disney+">
+                    <img src="imgs/ESPN" alt="ESPN">
+                </div>
+                <p>Deportes en vivo y todo el contenido premium de Disney.</p>
+                <div class="price">S/ 7.90 <span>/ mes</span></div>
+                <button class="buy-service" data-key="disney_espn" data-product="Disney+ + ESPN"
+                    data-price="7.90">Comprar Disney + ESPN</button>
+            </div>
+
+            <div class="service-card max">
+                <img src="imgs/Hbo" alt="HBO Max">
+                <p>HBO, Warner Bros. y Max Originals.</p>
+                <div class="price">S/ 5.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="max" data-product="HBO Max" data-price="5.50">Comprar Max</button>
+            </div>
+
+            <div class="service-card prime">
+                <img src="imgs/primeVideo.png" alt="Prime Video">
+                <p>Películas y series, incluyendo Amazon Originals.</p>
+                <div class="price">S/ 6.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="prime" data-product="Prime Video" data-price="6.50">Comprar Prime
+                    Video</button>
+            </div>
+
+            <div class="service-card vix">
+                <img src="imgs/Vix" alt="Vix">
+                <p>El mayor catálogo en español: novelas y películas.</p>
+                <div class="price">S/ 4.90 <span>/ mes</span></div>
+                <button class="buy-service" data-key="vix" data-product="Vix" data-price="4.90">Comprar Vix</button>
+            </div>
+
+            <div class="service-card crunchy">
+                <img src="imgs/Crunchyroll.png" alt="Crunchyroll">
+                <p>Anime directo desde Japón y estrenos simultáneos.</p>
+                <div class="price">S/ 5.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="crunch" data-product="Crunchyroll" data-price="5.50">Comprar
+                    Crunchyroll</button>
+            </div>
+
+            <div class="service-card paramount">
+                <img src="imgs/Paramount_Plus" alt="Paramount+">
+                <p>Series, películas y franquicias icónicas.</p>
+                <div class="price">S/ 5.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="paramount" data-product="Paramount+" data-price="5.50">Comprar
+                    Paramount+</button>
+            </div>
+
+            <div class="service-card iptv">
+                <img src="imgs/iptv" alt="IPTV">
+                <p>Miles de canales nacionales e internacionales.</p>
+                <div class="price">S/ 7.50 <span>/ mes</span></div>
+                <button class="buy-service" data-key="iptv" data-product="IPTV" data-price="7.50">Comprar IPTV</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMBOS -->
+    <section class="section dark" id="combos">
+        <h2>Calcula tu Paquete Personalizado</h2>
+        <p class="subtitle">Selecciona tus plataformas (Disney y Disney+ESPN no se pueden elegir juntos)</p>
+
+        <div class="combo-grid">
+            <div class="combo-card" data-key="netflix" data-name="Netflix" data-price="12.9"><img src="imgs/Netflix.png"
+                    alt="Netflix"></div>
+            <div class="combo-card" data-key="disney" data-name="Disney+" data-price="6.5"><img src="imgs/disney"
+                    alt="Disney+"></div>
+            <div class="combo-card duo" data-key="disney_espn" data-name="Disney+ + ESPN" data-price="7.9">
+                <img src="imgs/disney" alt="Disney+"><img src="imgs/ESPN" alt="ESPN">
+            </div>
+            <div class="combo-card" data-key="max" data-name="HBO Max" data-price="5.5"><img src="imgs/Hbo"
+                    alt="HBO Max"></div>
+            <div class="combo-card" data-key="prime" data-name="Prime Video" data-price="6.5"><img
+                    src="imgs/primeVideo.png" alt="Prime"></div>
+
+            <div class="combo-card" data-key="vix" data-name="Vix" data-price="4.9"><img src="imgs/Vix" alt="Vix"></div>
+            <div class="combo-card" data-key="crunch" data-name="Crunchyroll" data-price="5.5"><img
+                    src="imgs/Crunchyroll.png" alt="Crunchyroll"></div>
+            <div class="combo-card" data-key="paramount" data-name="Paramount+" data-price="5.5"><img
+                    src="imgs/Paramount_Plus" alt="Paramount"></div>
+            <div class="combo-card" data-key="iptv" data-name="IPTV" data-price="7.5"><img src="imgs/iptv" alt="IPTV">
+            </div>
+        </div>
+
+        <div class="combo-summary">
+            <div class="combo-summary-top">
+                <h3>Tu Paquete Personalizado</h3>
+                <span class="badge badge-promo" id="badgePromo" style="display:none;">SUPER PROMO</span>
+                <span class="badge" id="badgeOffer" style="display:none;">Oferta por volumen</span>
+            </div>
+
+            <div class="summary-logos" aria-live="polite"></div>
+
+            <div class="summary-lines">
+                <p class="promo-label" id="promoLabel" style="display:none;"></p>
+                <p class="original" id="lineOriginal"></p>
+                <p class="discount" id="lineDiscount"></p>
+                <p class="savings" id="lineSavings"></p>
+                <p class="note" id="lineNote" style="display:none;"></p>
+                <p class="final" id="lineFinal">Selecciona plataformas para ver el precio</p>
+            </div>
+
+            <button class="buy-btn" id="buyComboBtn">Continuar a Pago</button>
+        </div>
+    </section>
+
+    <!-- PAGOS -->
+    <section class="section" id="pagos">
+        <h2>Métodos de Pago</h2>
+        <p class="subtitle">Elige Yape o Plin, verás el QR y el monto exacto para pagar</p>
+
+        <div class="payments">
+            <button class="payment-card big-logo" type="button" data-method="Yape">
+                <img src="imgs/yape.png" alt="Yape" class="pay-logo-big">
+                <span>Yape</span>
+            </button>
+
+            <button class="payment-card big-logo" type="button" data-method="Plin">
+                <img src="imgs/plin" alt="Plin" class="pay-logo-big">
+                <span>Plin</span>
+            </button>
+        </div>
+
+
+
+        <div class="pay-details" id="payDetails" style="display:none;">
+            <div class="pay-details-head">
+                <div>
+                    <h3 id="payTitle">Pagar con Yape</h3>
+                    <p class="pay-sub">Escanea el QR y realiza el pago. Luego envía tu comprobante.</p>
+                </div>
+                <span class="pay-pill">Monto exacto</span>
+            </div>
+
+            <div class="pay-grid">
+                <div class="pay-qr">
+                    <img id="qrImg" src="imgs/Qr Yape.png" alt="QR de pago">
+                    <p class="pay-qr-hint">Escanea con tu app</p>
+                </div>
+
+                <div class="pay-info">
+                    <div class="pay-row"><span>Nombre</span><strong id="payName">-</strong></div>
+                    <div class="pay-row"><span>Número</span><strong id="payPhone">-</strong></div>
+                    <div class="pay-row"><span>Monto</span><strong id="payAmount">S/ 0.00</strong></div>
+                    <div class="pay-row"><span>Pedido</span><strong id="payOrder">-</strong></div>
+
+                    <button class="pay-send" id="sendReceiptBtn" disabled>Ya pagué — Enviar comprobante</button>
+                    <p class="pay-note">Te responderemos en el horario de atención.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <p class="subtitle">Haz click en “+” para ver la respuesta</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    ¿Las cuentas son privadas o compartidas?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" role="region">
+                    Sí, tendrás tu propio perfil privado protegido con un PIN de seguridad (según el servicio).
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    ¿Cómo y cuándo recibo los datos?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" role="region">
+                    Una vez confirmado tu pago, te enviamos los accesos dentro del horario de atención.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                    ¿Qué hago si tengo un problema con mi cuenta?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer" role="region">
+                    Escríbenos por WhatsApp con tu comprobante y lo solucionamos.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARIO -->
+    <section class="section" id="horario">
+        <h2>Nuestro Horario de Atención</h2>
+        <p class="subtitle">Lunes a Sábado de <span class="hl">9:00 AM</span> a <span class="hl">7:00 PM</span></p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Sammy Premier. Todos los logos son propiedad de sus respectivas marcas.</p>
+        <p>Proyecto conceptual sin afiliación.</p>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose">×</button>
+            <h3>¡Excelente elección!</h3>
+            <p id="modalProduct">Producto: -</p>
+            <p id="modalTotal">Total a Pagar: S/ 0.00</p>
+            <p class="modalHint">Ahora elige tu método de pago.</p>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating -->
+    <a class="wsp-float" id="wspFloat" href="#" target="_blank" rel="noopener">
+        💬 Chatea con nosotros
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
